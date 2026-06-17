@@ -1,0 +1,1 @@
+This is a simple python exercise to remind myself on the basics of python programming.
