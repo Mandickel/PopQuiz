@@ -58,7 +58,8 @@ african_capitals = {
 }
 countries = list(african_capitals.keys())
 Score = 0
-for i in [1,2,3,4,5]:
+i = 0
+while i < 5:
     country = random.choice(countries)
     city = african_capitals[country]
 
@@ -70,6 +71,9 @@ for i in [1,2,3,4,5]:
     else:
         Score = Score + 0
         print("That is wrong! the capital city of " + country + " is not " + Answer + ",please try again!")
-
-print("Game Over! Your Score is:" + str(Score) + "/5")  
-
+    i = i + 1
+if Score < 4:
+    print("Game Over! You have failed the test Your Score is:" + str(Score) + "/5") 
+ 
+else:
+    print("Game over! You have passed the exam Your Score is:" + str(Score) + "/5" )
